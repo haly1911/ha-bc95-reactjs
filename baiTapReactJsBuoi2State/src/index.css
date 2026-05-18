@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-sans text-base tracking-wider;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-8 lg:px-16;
+  }
+  .card {
+    @apply flex items-center justify-center rounded-xl;
+  }
+}
