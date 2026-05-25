@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-sans text-base tracking-wider;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-8 lg:px-16;
+  }
+  .action-btn {
+    @apply bg-[#709AB7] cursor-pointer border rounded-md  text-sm text-white hover:scale-105 duration-200;
+  }
+  .sub-btn {
+    @apply cursor-pointer border border-[#709AB7] rounded-md text-sm hover:scale-105 duration-200 text-gray-700;
+  }
+  .footer-el {
+    @apply text-gray-500 transition hover:text-[#105687];
+  }
+}
