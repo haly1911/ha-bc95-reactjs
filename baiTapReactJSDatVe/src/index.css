@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[rgba(255,255,255,0.03)] rounded-full cursor-pointer;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#e8c275] rounded-full cursor-pointer;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans overflow-x-hidden box-border;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-8 lg:px-16;
+  }
+  .header-btn {
+    @apply px-4 py-2 text-sm rounded-full border border-white/10 hover:bg-white/5 transition cursor-pointer;
+  }
+  .nav-titles {
+    @apply text-sm text-[#8a85a8] hover:text-[#e8c275] transition;
+  }
+  .seat-header {
+    @apply w-5 h-5 sm:w-7 sm:h-7 flex items-center justify-center text-[#e8c275] text-xs sm:text-base font-bold shrink-0;
+  }
+  .seat {
+    @apply w-5 h-5 sm:w-7 sm:h-7 flex items-center justify-center rounded-md sm:rounded-lg transition-all;
+  }
+  .seat-gap {
+    @apply flex items-center gap-1 sm:gap-3;
+  }
+  .seat-color {
+    @apply inline-block w-3.5 h-3.5 rounded-md mr-2 align-middle;
+  }
+  .ticket-info {
+    @apply flex justify-between text-sm py-2 border-b border-dashed border-white/10;
+  }
+  .booking-info-titles {
+    @apply text-xs uppercase tracking-widest text-[#8a85a8];
+  }
+  .modal-btn {
+    @apply px-6 py-2 text-sm font-semibold rounded-full transition cursor-pointer;
+  }
+}
